@@ -12,6 +12,7 @@ function walkFile(
 ) {
     const extname = path.extname(filepath);
     if (
+        extname === ".es6" ||
         extname === ".js" ||
         extname === ".jsx" ||
         extname === ".ts" ||

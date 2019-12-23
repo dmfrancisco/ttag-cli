@@ -13,7 +13,8 @@
     "pretty": "prettier --write \"./src/**/*.ts\" \"./tests/**/*.ts\"",
     "precommit": "lint-staged",
     "postinstall": "node ./scripts/install_completion.js",
-    "readme": "npm run build && node ./scripts/doc.js"
+    "readme": "npm run build && node ./scripts/doc.js",
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "*.{ts,css,tsx}": [
